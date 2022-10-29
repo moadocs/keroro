@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta data-n-head="ssr" charset="utf-8">
+        <meta data-n-head="ssr" name="robots" content="noindex">
+        <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="케로로빵 2022 띠부띠부씰 도감 ver 1.0">
+        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="케로로빵 띠부띠부씰 추억을 보관하자">
+        <title>케로로빵 2022 띠부띠부씰 도감 ver 1.0</title>
+        <style>
+            .flex {display: flex;}
+            #downloadBtn { margin: 0 10px; }
+            .selected {background-color: rgba(0,0,0,0.7);}
+            .kero01 {background:url("image/keroro/keroro-01.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero02 {background:url("image/keroro/keroro-02.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero03 {background:url("image/keroro/keroro-03.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero04 {background:url("image/keroro/keroro-04.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero05 {background:url("image/keroro/keroro-05.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero06 {background:url("image/keroro/keroro-06.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero07 {background:url("image/keroro/keroro-07.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero08 {background:url("image/keroro/keroro-08.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero09 {background:url("image/keroro/keroro-09.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero10 {background:url("image/keroro/keroro-10.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero11 {background:url("image/keroro/keroro-11.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero12 {background:url("image/keroro/keroro-12.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero13 {background:url("image/keroro/keroro-13.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero14 {background:url("image/keroro/keroro-14.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero15 {background:url("image/keroro/keroro-15.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero16 {background:url("image/keroro/keroro-16.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero17 {background:url("image/keroro/keroro-17.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero18 {background:url("image/keroro/keroro-18.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero19 {background:url("image/keroro/keroro-19.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero20 {background:url("image/keroro/keroro-10.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero21 {background:url("image/keroro/keroro-21.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero22 {background:url("image/keroro/keroro-22.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero23 {background:url("image/keroro/keroro-23.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero24 {background:url("image/keroro/keroro-24.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero25 {background:url("image/keroro/keroro-25.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero26 {background:url("image/keroro/keroro-26.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero27 {background:url("image/keroro/keroro-27.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero28 {background:url("image/keroro/keroro-28.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero29 {background:url("image/keroro/keroro-29.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero30 {background:url("image/keroro/keroro-20.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero31 {background:url("image/keroro/keroro-31.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero32 {background:url("image/keroro/keroro-32.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero33 {background:url("image/keroro/keroro-33.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero34 {background:url("image/keroro/keroro-34.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero35 {background:url("image/keroro/keroro-35.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero36 {background:url("image/keroro/keroro-36.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero37 {background:url("image/keroro/keroro-37.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero38 {background:url("image/keroro/keroro-38.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero39 {background:url("image/keroro/keroro-39.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero40 {background:url("image/keroro/keroro-30.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero41 {background:url("image/keroro/keroro-41.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero42 {background:url("image/keroro/keroro-42.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero43 {background:url("image/keroro/keroro-43.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero44 {background:url("image/keroro/keroro-44.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero45 {background:url("image/keroro/keroro-45.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero46 {background:url("image/keroro/keroro-46.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero47 {background:url("image/keroro/keroro-47.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero48 {background:url("image/keroro/keroro-48.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero49 {background:url("image/keroro/keroro-49.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero50 {background:url("image/keroro/keroro-40.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero51 {background:url("image/keroro/keroro-51.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero52 {background:url("image/keroro/keroro-52.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero53 {background:url("image/keroro/keroro-53.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero54 {background:url("image/keroro/keroro-54.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero55 {background:url("image/keroro/keroro-55.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero56 {background:url("image/keroro/keroro-56.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero57 {background:url("image/keroro/keroro-57.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero58 {background:url("image/keroro/keroro-58.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero59 {background:url("image/keroro/keroro-59.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero60 {background:url("image/keroro/keroro-60.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero61 {background:url("image/keroro/keroro-61.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero62 {background:url("image/keroro/keroro-62.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero63 {background:url("image/keroro/keroro-63.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero64 {background:url("image/keroro/keroro-64.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero65 {background:url("image/keroro/keroro-65.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero66 {background:url("image/keroro/keroro-66.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero67 {background:url("image/keroro/keroro-67.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero68 {background:url("image/keroro/keroro-68.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero69 {background:url("image/keroro/keroro-69.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero70 {background:url("image/keroro/keroro-70.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero71 {background:url("image/keroro/keroro-71.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero72 {background:url("image/keroro/keroro-72.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero73 {background:url("image/keroro/keroro-73.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero74 {background:url("image/keroro/keroro-74.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero75 {background:url("image/keroro/keroro-75.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero76 {background:url("image/keroro/keroro-76.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero77 {background:url("image/keroro/keroro-77.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero78 {background:url("image/keroro/keroro-78.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero79 {background:url("image/keroro/keroro-79.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero80 {background:url("image/keroro/keroro-80.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero81 {background:url("image/keroro/keroro-81.jpg") no-repeat; background-size: 87.5px 116px;}
+            .kero82 {background:url("image/keroro/keroro-82.jpg") no-repeat; background-size: 87.5px 116px;}
+            .image {position:relative; display:inline-block; width:84px; height:111px; margin: 1px; cursor:pointer;}
+            .image > div {width:100%; height:100%; position:absolute; border: 1px solid black;}
+            .img01 {background-position: 0px 0px}
+            body {background-color: black;}
+            .btnDiv {margin-top:20px;}
+            .title {text-align:center; font-size:20px; margin-bottom:20px; color:white;}
+            .linkStr {width:100%; max-width: 450px; margin-top:10px;}
+            .linkLabel, .checkCnt {color:white; margin-bottom: 10px;}
+            .textDiv {color:white; margin-top:20px;}
+            .textDiv ul {list-style: decimal; padding-left:20px; margin-top:5px;}
+            .textDiv ul li span {color:crimson;}
+        </style>
+    </head>
+    <body>
+        <div class="title">케로로빵 2022 띠부띠부씰 도감 ver 1.0</div>
+        <div class="checkCnt">(<span id="cnt">0</span>/82)</div>
+        <div id="imageDiv">
+            <div class="image kero01 img01"><div></div></div>
+            <div class="image kero02 img01"><div></div></div>
+            <div class="image kero03 img01"><div></div></div>
+            <div class="image kero04 img01"><div></div></div>
+            <div class="image kero05 img01"><div></div></div>
+            <div class="image kero06 img01"><div></div></div>
+            <div class="image kero07 img01"><div></div></div>
+            <div class="image kero08 img01"><div></div></div>
+            <div class="image kero09 img01"><div></div></div>
+            <div class="image kero10 img01"><div></div></div>
+            <div class="image kero11 img01"><div></div></div>
+            <div class="image kero12 img01"><div></div></div>
+            <div class="image kero13 img01"><div></div></div>
+            <div class="image kero14 img01"><div></div></div>
+            <div class="image kero15 img01"><div></div></div>
+            <div class="image kero16 img01"><div></div></div>
+            <div class="image kero17 img01"><div></div></div>
+            <div class="image kero18 img01"><div></div></div>
+            <div class="image kero19 img01"><div></div></div>
+            <div class="image kero20 img01"><div></div></div>
+            <div class="image kero21 img01"><div></div></div>
+            <div class="image kero22 img01"><div></div></div>
+            <div class="image kero23 img01"><div></div></div>
+            <div class="image kero24 img01"><div></div></div>
+            <div class="image kero25 img01"><div></div></div>
+            <div class="image kero26 img01"><div></div></div>
+            <div class="image kero27 img01"><div></div></div>
+            <div class="image kero28 img01"><div></div></div>
+            <div class="image kero29 img01"><div></div></div>
+            <div class="image kero30 img01"><div></div></div>
+            <div class="image kero31 img01"><div></div></div>
+            <div class="image kero32 img01"><div></div></div>
+            <div class="image kero33 img01"><div></div></div>
+            <div class="image kero34 img01"><div></div></div>
+            <div class="image kero35 img01"><div></div></div>
+            <div class="image kero36 img01"><div></div></div>
+            <div class="image kero37 img01"><div></div></div>
+            <div class="image kero38 img01"><div></div></div>
+            <div class="image kero39 img01"><div></div></div>
+            <div class="image kero40 img01"><div></div></div>
+            <div class="image kero41 img01"><div></div></div>
+            <div class="image kero42 img01"><div></div></div>
+            <div class="image kero43 img01"><div></div></div>
+            <div class="image kero44 img01"><div></div></div>
+            <div class="image kero45 img01"><div></div></div>
+            <div class="image kero46 img01"><div></div></div>
+            <div class="image kero47 img01"><div></div></div>
+            <div class="image kero48 img01"><div></div></div>
+            <div class="image kero49 img01"><div></div></div>
+            <div class="image kero50 img01"><div></div></div>
+            <div class="image kero51 img01"><div></div></div>
+            <div class="image kero52 img01"><div></div></div>
+            <div class="image kero53 img01"><div></div></div>
+            <div class="image kero54 img01"><div></div></div>
+            <div class="image kero55 img01"><div></div></div>
+            <div class="image kero56 img01"><div></div></div>
+            <div class="image kero57 img01"><div></div></div>
+            <div class="image kero58 img01"><div></div></div>
+            <div class="image kero59 img01"><div></div></div>
+            <div class="image kero60 img01"><div></div></div>
+            <div class="image kero61 img01"><div></div></div>
+            <div class="image kero62 img01"><div></div></div>
+            <div class="image kero63 img01"><div></div></div>
+            <div class="image kero64 img01"><div></div></div>
+            <div class="image kero65 img01"><div></div></div>
+            <div class="image kero66 img01"><div></div></div>
+            <div class="image kero67 img01"><div></div></div>
+            <div class="image kero68 img01"><div></div></div>
+            <div class="image kero69 img01"><div></div></div>
+            <div class="image kero70 img01"><div></div></div>
+            <div class="image kero71 img01"><div></div></div>
+            <div class="image kero72 img01"><div></div></div>
+            <div class="image kero73 img01"><div></div></div>
+            <div class="image kero74 img01"><div></div></div>
+            <div class="image kero75 img01"><div></div></div>
+            <div class="image kero76 img01"><div></div></div>
+            <div class="image kero77 img01"><div></div></div>
+            <div class="image kero78 img01"><div></div></div>
+            <div class="image kero79 img01"><div></div></div>
+            <div class="image kero80 img01"><div></div></div>
+            <div class="image kero81 img01"><div></div></div>
+            <div class="image kero82 img01"><div></div></div>
+        </div>
+        <div class="btnDiv">
+            <input type="button" id="reverseBtn" value="선택반전"/>
+            <input type="button" id="saveBtn" value="이미지저장"/>
+            <input type="button" id="linkBtn" value="링크복사"/>
+            <div>
+                <textarea id="linkStr" class="linkStr" >https://moadocs.github.io/keroro/?code=</textarea>
+            </div>
+        </div>
+        <div class="textDiv">
+            <span>※ 사용법</span>
+            <ul>
+                <li>띠부씰 클릭 : 띠부씰이 선택 됩니다.</li>
+                <li>선택반전 : 선택한 띠부씰이 반전 됩니다.</li>
+                <li>이미지저장 : 현재 선택된 상태로 이미지가 저장됩니다. 
+                    <br><span>* 현재 화면의 배열대로 저장되기 때문에 창크기 조절 후 이미지 저장 하시면 원하는 배열로 저장 됩니다. (PC에서 하는것을 추천)</span>
+                    <br><span>* 삼성 인터넷 브라우저 사용자 및 위 이미지 저장 버튼이 안 먹으면 아래 버튼으로 다운로드 버튼을 직접 생성 하여 저장 가능.</span>
+                </li>
+                <div class="flex">
+                    <input type="button" id="samsungBtn" value="다운로드 버튼생성"/>
+                    <div id="downloadBtn"></div>
+                </div>
+                <li>링크복사 : 현재 선택된 띠부씰이 포함된 URL을 복사합니다 <br><span>* 복사한 URL로 접속시 선택한 띠부씰이 유지됩니다.</span></li>
+            </ul>
+        </div>
+    </body>
+</html>
+<script src="js/html2canvas.min.js"></script>
+<script>
+    var url = 'https://moadocs.github.io/keroro/?code=';
+    var digits = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_';
+    var binArray = ['000000','000001','000010','000011','000100','000101','000110','000111',
+                      '001000','001001','001010','001011','001100','001101','001110','001111',
+                      '010000','010001','010010','010011','010100','010101','010110','010111',
+                      '011000','011001','011010','011011','011100','011101','011110','011111',
+                      '100000','100001','100010','100011','100100','100101','100110','100111',
+                      '101000','101001','101010','101011','101100','101101','101110','101111',
+                      '110000','110001','110010','110011','110100','110101','110110','110111',
+                      '111000','111001','111010','111011','111100','111101','111110','111111'];
+    var query = window.location.search;
+    var param = new URLSearchParams(query);
+    var code = param.get('code');
+
+    var image = document.querySelectorAll('.image > div');
+    var decoded = decode(code);
+    for (var i = 0 ; i < image.length; i++) {
+        if(decoded && decoded[i] == '1') {
+            image[i].classList.toggle("selected");
+        }
+
+        image[i].addEventListener('click', function(event){
+            event.target.classList.toggle("selected");
+
+            createLink();
+        });
+    }
+    createLink();
+
+    var reverseBtn = document.getElementById('reverseBtn');
+    reverseBtn.addEventListener('click', function(event){
+        var image = document.querySelectorAll('.image > div');
+
+        for (var i = 0 ; i < image.length; i++) {
+            image[i].classList.toggle("selected");
+        }
+
+        createLink();
+    });
+
+    var saveBtn = document.getElementById('saveBtn');
+    saveBtn.addEventListener('click', function(event){
+        saveBtn.disable = true;
+        saveBtn.value = '저장중...';
+        html2canvas(document.querySelector("#imageDiv")).then(function(canvas){
+            var myImage = canvas.toDataURL();
+            var link = document.createElement('a');
+            link.download = 'Pokedoc.png';
+            link.href = myImage;
+            document.body.appendChild(link);
+            link.click()
+            document.body.removeChild(link);
+            saveBtn.disable = false;
+            saveBtn.value = '이미지저장';   
+        });
+        
+    });
+
+    var samsungBtn = document.getElementById('samsungBtn');
+    var downloadBtn = document.getElementById('downloadBtn');
+    samsungBtn.addEventListener('click', function(event){
+        samsungBtn.disable = true;
+        samsungBtn.value = '생성중...'
+        html2canvas(document.querySelector("#imageDiv")).then(function(canvas){
+            downloadBtn.innerHTML = ""
+            var myImage = canvas.toDataURL();
+            var link = document.createElement('a');
+            console.log(link)
+            link.download = 'Pokedoc.png';
+            link.href = myImage;
+            link.innerHTML = "다운로드"
+            downloadBtn.appendChild(link);
+            saveBtn.disable = false;
+            samsungBtn.value = '다운로드 버튼생성';   
+        });
+        
+    });
+
+    var linkBtn = document.getElementById('linkBtn');
+    linkBtn.addEventListener('click', function(event){
+        var content = document.getElementById('linkStr');
+    
+        content.select();
+        document.execCommand('copy');
+        content.setSelectionRange(0, 0);
+
+        alert("링크가 복사되었습니다!");
+    });
+    
+    function createLink() {
+        var image = document.querySelectorAll('.image > div');
+        var codeStr = '';
+        var cnt = 0;
+
+        for (var i = 0 ; i < image.length; i++) {
+            codeStr += (image[i].classList.contains('selected')?'1':'0');
+            
+            if(image[i].classList.contains('selected')) {
+                cnt++;
+            }
+        }
+        var linkStr = document.getElementById('linkStr');
+        linkStr.value = url + encode(codeStr + '0');
+
+        var cntStr = document.getElementById('cnt');
+        cntStr.innerHTML = cnt;
+    }
+
+    function decode(code) {
+        if(code) {
+            var decodedCode = '';
+            for(var i = 0; i < code.length; i++) {
+                decodedCode += binArray[digits.indexOf(code[i])];
+            }
+            return decodedCode;
+        }
+        return code;
+    }
+
+    function encode(code) {
+        var encodedCode = '';
+        for(var i = 0; i < (parseInt(code.length/6)); i++) {
+            encodedCode += digits.charAt(parseInt(code.substr(i*6,6),2));
+        }
+        return encodedCode;
+    }
+</script>
